@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+.navbar-default .navbar-nav>li>a {
+    color: #3ac2a3;
+	font-family: 'Amatic SC', cursive;
+	font-size: 30px;
+}
+
+.btn-danger {
+	background-color: #3ac2a3;
+	border-color: #3ac2a3;
+	float: right;
+	margin-right: 47%;
+}
+
+.btn-danger:hover {
+	background-color: #1b1b4d;
+	border-color: #1b1b4d;
+}
+
+h1 {
+	
+    font-family: 'Josefin Sans', sans-serif;
+	text-align: center;
+	padding-bottom: 30px;
+	padding-top: 70px;
+}
+
+h2 {
+	text-align: center;
+}
+
+p {
+	font-family: 'Josefin Sans', sans-serif;
+	color: #464751;
+	font-size: 15px;
+}
+
+.icon {
+	text-align: center;
+}
+
+#allServices, #allWork {
+	padding-top: 90px;
+}
+
+#intro p {
+	padding-bottom: 40px;
+}
+
+#allServices h2 {
+	padding-top: 20px;
+	padding-bottom: 23px;
+}
+
+#allServices p {
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+#pageFooter {
+	height: 140px;
+	background-color: #3ac2a3;
+}
+
+#pageFooter p {
+	padding-top: 120px;
+	text-align: center;
+	color: #FFF;
+}
+
+
+
+
+
+
