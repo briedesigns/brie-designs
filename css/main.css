@@ -11,7 +11,7 @@ html {
 h1 {
 	font-family: 'Josefin Sans', sans-serif;
 	text-align: center;
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 	padding-top: 20px;
 }
 h2 {
@@ -31,204 +31,88 @@ body {
 			Navigation
 *****************************************************************************/
 
-.navbar-default {
-	background-color: #fff;
-	border-color: #fff;
-}
-.navbar {
-	border-radius: 0;
-	padding-top: 12px;
-	min-height: 70px;
-	padding-bottom: 40px;
-}
-.navbar-brand #logo {
-	margin-right: 100px;
-}
-.navbar-default .navbar-nav > li > a {
+
+#hamburger {
 	text-align: right;
 	float: right;
 	font-family: 'Amatic SC', cursive;
 	color: #3ac2a3;
 	font-size: 30px;
 	padding: 5px 10px;
-	margin: 5px 2px 0 0;
-	border: 1px solid rgba(90,169,206,0);
 	border-radius: 3px;
-	-webkit-transition: all .3s ease-in;
-	-moz-transition: all .3s ease-in;
-	-ms-transition: all .3s ease-in;
-	-o-transition: all .3s ease-in;
-	transition: all .3s ease-in;
 }
-.navbar-nav > li > a {
-	padding: 10px 18px;
-	margin-right: 10px;
-	margin-top: 6px;
-}
-.navbar-nav > li > a.active {
-	border-radius: 3px;
-	color: #fff;
-	background-color: rgba(27,27,77,0.9);
-}
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-	color: #fff;
-	background-color: rgba(58,194,163,0.3);
-}
-figcaption {
-	display: none;
-}
-.navbar-default .navbar-toggle {
-	border-color: #3ac2a3;
-}
-.navbar-default .navbar-toggle:hover {
-	background-color: rgba(58,194,163,0.2);
-	transition: color .5s ease-in-out, background-color .5s ease-in-out, border-color .5s ease-in-out, box-shadow .5s ease-in-out;
-}
-#myNavbar {
-	z-index: 5;
-}
-/****************************************************************************
-			NEW HAMBURGER MENU
-*****************************************************************************/
 
-label .hamburger {
-	position: absolute;
-	top: 135px;
-	left: 50px;
-	width: 30px;
-	height: 2px;
-	background: #000;
-	display: block;
-	-webkit-transform-origin: center;
-	transform-origin: center;
-	-webkit-transition: .5s ease-in-out;
-	transition: .5s ease-in-out;
+.nav a {
+	color: #3ac2a3;
+	padding-right: 30px;
+	margin: 0 auto;
 }
-label .hamburger:after, label .hamburger:before {
-	-webkit-transition: .5s ease-in-out;
-	transition: .5s ease-in-out;
-	content: "";
-	position: absolute;
-	display: block;
-	width: 100%;
-	height: 100%;
-	background: #000;
-}
-label .hamburger:before {
-	top: -10px;
-}
-label .hamburger:after {
-	bottom: -10px;
-}
-label input {
+
+#mainNav ul.slide {
+  display: block;
+  width: 100%;
+  padding-left: 80px;
+  margin-top: 30px;
+  margin-bottom: -30px;
+  background-color: #f7f7f7;
+ }
+
+.nav a:hover {
+ 	color: #1b1b4d;
+ 	text-decoration: none;
+ 	transition: all 0.2s ease-in;
+ }
+
+#hamburger {
 	display: none;
 }
-label input:checked + .menu {
-	box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
-	border-radius: 0;
+
+button {
+	padding: 5px 9px 5px 9px;
+	font-size: 14px;
+	background-color: #fff;
+	border-radius: 5px;
+	margin-right: 20px;
+	margin-top: 40px;
+	float: right;
 }
-label input:checked + .menu .hamburger {
-	-webkit-transform: rotate(45deg);
-	transform: rotate(45deg);
-}
-label input:checked + .menu .hamburger:after {
-	-webkit-transform: rotate(90deg);
-	transform: rotate(90deg);
-	bottom: 0;
-}
-label input:checked + .menu .hamburger:before {
-	-webkit-transform: rotate(90deg);
-	transform: rotate(90deg);
-	top: 0;
-}
-label input:checked + .menu + ul {
-	opacity: 1;
-}
-label .menu {
-	position: fixed;
-	margin-top: 5px;
-	right: -100px;
-	top: -100px;
-	z-index: 100;
-	width: 200px;
-	height: 200px;
-	background: #FFF;
-	border-radius: 50% 50% 50% 50%;
-	-webkit-transition: .5s ease-in-out;
-	transition: .5s ease-in-out;
-	box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
-	cursor: pointer;
-}
-label ul {
-	z-index: 200;
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	opacity: 0;
-	-webkit-transition: .25s 0s ease-in-out;
-	transition: .25s 0s ease-in-out;
-}
-label a {
-	margin-bottom: 1em;
-	display: block;
-	color: #3ac2a3;
-	text-decoration: none;
-	font-family: 'Amatic SC', cursive;
-	font-size: 23pt;
-}
-label a:hover {
-	color: #1b1b4d;
-	text-decoration-line: none;
-}
-label .hamburger, label .hamburger:after, label .hamburger:before {
-	background: #3ac2a3;
-}
+
 /****************************************************************************
 			About Me / Intro Section / Hero / Logo
 *****************************************************************************/
 
 #intro p {
-	padding-bottom: 40px;
+	padding-bottom: 20px;
+	padding-right: 5px;
+	padding-left: 5px;
 }
-.btn-danger {
-	background-color: #3ac2a3;
-	border-color: #3ac2a3;
+
+#intro {
+	padding-bottom: 90px;
 }
-.btn-danger:hover {
-	background-color: #1b1b4d;
-	border-color: #1b1b4d;
-}
-.btn {
-	transition: color .5s ease-in-out, background-color .5s ease-in-out, border-color .5s ease-in-out, box-shadow .5s ease-in-out;
-	
-}
-#resumebutton {
-	text-align: center;
-	padding-bottom: 150px;
-}
+
 .icon {
 	text-align: center;
 }
 #hero img {
 	width: 100%;
-	padding-bottom: 100px;
-}
-#logo img {
-	width: 40%;
-	margin-bottom: 20px;
-	margin-top: -44px;
-}
-.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
-	margin-bottom: 0px;
+	padding-top: 50px;
+	padding-bottom: 15px;
+	z-index: 1;
 }
 
+#logo img {
+	width: 110px;
+	padding-top: 20px;
+}
+
+figcaption {
+	display: none;
+}
 
 /****************************************************************************
 			Services
 *****************************************************************************/
-
 
 #allServices {
 	margin-bottom: 80px;
@@ -242,12 +126,14 @@ label .hamburger, label .hamburger:after, label .hamburger:before {
 	padding-bottom: 50px;
 	text-align: center;
 }
-#allServices, #allWork {
-	padding-top: 90px;
+#allServices {
+	padding-top: 3px;
 }
+
 /****************************************************************************
 			Portfolio
 *****************************************************************************/
+
 #allWork {
 	text-align: center;
 	margin-bottom: 100px;
@@ -264,8 +150,6 @@ label .hamburger, label .hamburger:after, label .hamburger:before {
 /****************************************************************************
 			Footer & SOCIAL LINKS
 *****************************************************************************/
-
-
 
 #pageFooter {
 	background-color: #3ac2a3;
@@ -318,164 +202,73 @@ label .hamburger, label .hamburger:after, label .hamburger:before {
 	color: #fff;
 }
 
-
-/****************************************************************************
-			Decorative Elements
-*****************************************************************************/
-
-/*#leafleft {
-	padding-left: 15px;
+#mailBottom {
+	padding-left: 50px;
 }
-#leafright {
-	text-align: right;
-	padding-bottom: 40px;
-	margin-right: 20px;
-}*/
 
 /****************************************************************************
 			Media Queries
 *****************************************************************************/
 
-@media screen and (min-width:480px) {
-.navbar-header #logo {
-	margin-top: 60px;
-}
-label .menu {
-	margin-top: 30px;
-	margin-right: 5px;
-}
-.navbar-default .navbar-toggle {
-	display: none;
-}
+@media screen and (min-width: 320px) {
 
-#kickaxe, #archstone, #chop, #marilyn, #beer, #idCon {
-	padding-bottom: 80px;
-}
+
+	#kickaxe, #archstone, #chop, #marilyn, #beer, #idCon {
+		padding-bottom: 80px;
+	}
+
+	.services p {
+		margin-left: 25px;
+		margin-right: 25px;
+	}
 
 }
 
-
-@media screen and (min-width:650px) {
-.navbar-header #logo {
-	margin-top: 60px;
-	margin-left: -80px;
-	margin-bottom: 20px;
-}
-label .menu {
-	margin-top: 30px;
-	margin-right: 5px;
-}
-.navbar-default .navbar-toggle {
-	display: none;
-}
-}
-
-@media screen and (min-width:768px) {
-.navbar-header #logo {
-	margin-right: 10px;
-	text-align: left;
-	margin-left: -650px;
-	width: 390px;
-}
-
-label .menu {
-	display: none;
-}
-.navbar-default .navbar-toggle {
-	display: none;
-}
-
-
-	.navbar-default .navbar-nav {
-		display: block;
-		margin-right: 290px;
+@media screen and (min-width: 492px) {
+	#mailBottom {
+		margin-left: -50px;
 	}
 
 
-	ul.nav.navbar-nav {
+}
+
+@media screen and (min-width: 768px) {
+	#hamburger {
 		display: inline-block;
 	}
 
-	#navBar {
+	.nav {
 		display: inline-block;
-		margin-left: 215px;
-		width: 600px;
+		margin-top: 28px;
 	}
 
-	#myNavbar {
-		float: right;
-		text-align: right;
-		margin-right: 440px;
+	.nav:hover {
+		transition: all 9s ease;
+		color: #1b1b4d;
 	}
 
-	#allWork {
-		/*display: block;*/
-		/*background-color: yellow;*/
+	#mainNav button {
+		display: none;
 	}
 
-
-
-}
-
-
-
-@media screen and (min-width:990px) {
-.navbar-default .navbar-toggle {
-	display: none;
-}
-	
-	#navBar {
-	position: absolute;
-		display: inline-block;
-		width: 600px;
+	#logo img {
+		width: 120px;
+		margin-left: 30px;
 	}
 
-	#myNavbar {
-		float: right;
-		text-align: right;
-		margin-right: 670px;
+	#medias {
+		padding-left: 50px;
 	}
 
-	.navbar-header #logo {
-	margin-right: 10px;
-	text-align: left;
-	margin-left: -850px;
-	width: 390px;
 }
 
-#medias {
-	margin-left: 35%;
-}
-	
-}
-
-@media screen and (min-width:1200px) {
-.navbar-default .navbar-toggle {
-	display: none;
-}
-	#navBar {
-		position: absolute;
-		display: inline-block;
-		width: 600px;
+@media screen and (min-width: 992px) {
+	.work {
+		margin-bottom: -80px;
 	}
 
-	#myNavbar {
-		float: right;
-		text-align: right;
-		margin-right: 670px;
+	#medias {
+		padding-left: 110px;
 	}
 
-	.navbar-header #logo {
-	margin-right: 10px;
-	text-align: left;
-	margin-left: -1050px;
-	width: 390px;
 }
-
-#medias {
-	margin-left: 40%;
-}
-
-}
-
-
